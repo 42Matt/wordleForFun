@@ -19,6 +19,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src/*", "additional.d.ts"],
+  "include": ["src/**/*", "additional.d.ts"],
   "exclude": ["**/*.{test,spec,story}.{ts,tsx}", "**/*.ignore", "node-modules/*"]
 }

@@ -1,22 +1,24 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
     "jsx": "preserve",
+    "moduleResolution": "node",
     "jsxImportSource": "solid-js",
-    "target": "ESNext",
+    "esModuleInterop": false,
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
+
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/*", "additional.d.ts"],
   "exclude": ["**/*.{test,spec,story}.{ts,tsx}", "**/*.ignore", "node-modules/*"]
 }
